@@ -12,23 +12,29 @@
 <body>
     <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city"  required/>
-            <input type="submit" value="search"/>
+        <form class="search-form">
+            <input type="search" placeholder="Enter a city"  required class="search-form-input"/>
+            <input type="submit" value="search" class="search-form-button"/>
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
-        <h1>
+        <h1 class="current-city">
             Venice
         </h1>
-        <p>
+        <p class="current-details">
+            <span id="current-date"></span>
             Monday 15:19
             <br />
-            Humidity: 66% Wind: 33.13km/h
+            Humidity: <strong>66%</strong> Wind: <strong>88km/h</strong>
         </p>
         </div>
-       <div> 🌤️12°C</div>
+       <div class="current-temperature"> <span class="current-temperature-icon">☀️</span
+            ><span class="current-temperature-value" id="current-temperature"
+              >24</span>
+            </div>
+       </div>
     </main>
     <footer>
         Coded by <a href="">Nompumelelo</a>
